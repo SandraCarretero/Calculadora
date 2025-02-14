@@ -31,20 +31,28 @@ const calcular = (numero1, numero2, operacion) => {
   switch (operacion) {
     case 'sumar':
       resultado = numero1 + numero2;
-      console.log(`El resultado de ${numero1} + ${numero2} = ${resultado}`);
+      console.log(
+        `El resultado de ${operacion} ${numero1} + ${numero2} = ${resultado}`
+      );
       break;
     case 'restar':
       resultado = numero1 - numero2;
-      console.log(`El resultado de ${numero1} - ${numero2} = ${resultado}`);
+      console.log(
+        `El resultado de ${operacion} ${numero1} - ${numero2} = ${resultado}`
+      );
       break;
     case 'multiplicar':
       resultado = numero1 * numero2;
-      console.log(`El resultado de ${numero1} * ${numero2} = ${resultado}`);
+      console.log(
+        `El resultado de ${operacion} ${numero1} * ${numero2} = ${resultado}`
+      );
       break;
     case 'dividir':
       if (numero2 !== 0) {
         resultado = numero1 / numero2;
-        console.log(`El resultado de ${numero1} / ${numero2} = ${resultado}`);
+        console.log(
+          `El resultado de ${operacion} ${numero1} / ${numero2} = ${resultado}`
+        );
       } else {
         console.log('Error: No se puede dividir por 0');
       }
